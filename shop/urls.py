@@ -4,7 +4,7 @@ from shop.views import index, detail, checkout, confirmation
 urlpatterns = [
     path('', index, name='home'),
     path('', index, name='Hamburger'),
-    path('', index, name='Boisson'),
+    path('boissons', index, name='Boisson'),
     path('', index, name='Accompagnement'),
     path('', index, name='Dessert'),
     path('<int:myid>', detail, name="detail"),
